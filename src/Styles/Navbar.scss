@@ -1,0 +1,165 @@
+@import "./Variables.scss";
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 8vh;
+  padding: 0 2rem;
+  background-color: $light-color;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-family: $body-font;
+    background-color: $light-color;
+
+    a {
+      text-decoration: none;
+      color: $secondary-color;
+      font-size: 22px;
+      font-weight: 600;
+      margin: 1rem;
+    }
+  }
+}
+
+.name {
+  font-size: 36px;
+
+  a {
+    text-decoration: none;
+    color: $primary-color;
+    font-family: $slogan-font;
+    font-weight: 700;
+
+    span {
+      color: $secondary-color;
+    }
+  }
+}
+
+.burger {
+  display: none;
+  div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+  }
+}
+
+.icons {
+  a {
+    color: $primary-color;
+    padding-left: 1rem;
+  }
+}
+
+// Laptops
+@media (max-width: $breakpoint-laptop) {
+  .header {
+    width: 100%;
+
+    .navbar {
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+  .name {
+    a {
+      font-size: 24px;
+    }
+  }
+}
+
+// Tablets
+@media (max-width: $breakpoint-tablet) {
+  body {
+    overflow-x: hidden;
+  }
+  .header {
+    position: relative;
+    z-index: 1;
+    border-bottom: $secondary-color 2px solid;
+    padding: 0;
+
+    ul {
+      position: absolute;
+      justify-content: flex-start;
+      flex-direction: column;
+      right: 0;
+      top: 8vh;
+      height: 92vh;
+      width: 25%;
+      transform: translateX(100%);
+      transition: transform 0.25s ease-in;
+      // border-left: $secondary-color 3px solid;
+
+      li {
+        padding: 1rem;
+      }
+    }
+
+    .menu-open {
+      transform: translateX(0);
+    }
+
+    .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .line2 {
+      opacity: 0;
+    }
+    .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+  // Title
+  .name {
+    a {
+      font-size: 20px;
+    }
+  }
+
+  // menu
+  .burger {
+    cursor: pointer;
+    display: block;
+
+    div {
+      background-color: $secondary-color;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .icons {
+    font-size: 13px;
+  }
+}
+
+// Smartphones
+@media (max-width: $breakpoint-smartphone) {
+  .name {
+    a {
+      font-size: 24px;
+    }
+  }
+  .icons {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 336px) {
+  .header {
+    flex-direction: column;
+    min-height: 10vh;
+    ul {
+      top: 11.5vh;
+    }
+  }
+}
