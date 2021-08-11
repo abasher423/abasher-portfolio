@@ -1,0 +1,29 @@
+@import "./Variables.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  // font-family: monospace;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #c4beb5;
+  background-image: url(../images/background2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @media (max-width: $breakpoint-laptop) {
+      display: none;
+    }
+  }
+}
