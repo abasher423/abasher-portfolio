@@ -1,0 +1,127 @@
+.title {
+  background-color: #ffff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #1b1b1b;
+  font-size: 24px;
+  letter-spacing: 0.26em;
+  padding: 1rem;
+}
+
+.project-1,
+.project-2,
+.project-3,
+.project-4 {
+  height: 50vh;
+}
+
+.project-1 .project-left,
+.project-2 .project-left,
+.project-3 .project-left,
+.project-4 .project-left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  height: 50vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.project-1 .project-right,
+.project-2 .project-right,
+.project-3 .project-right,
+.project-4 .project-right {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  height: 50vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.project-1 {
+  background-color: #ffff;
+}
+
+.project-2 {
+  background-color: #e63946;
+}
+
+.project-3 {
+  background-color: #ffff;
+}
+
+.project-4 {
+  background-color: #e63946;
+}
+
+.project-details-1 {
+  height: 100%;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.project-details-1 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.26em;
+  color: #e63946;
+}
+
+.project-details-1 p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #1b1b1b;
+  text-align: left;
+  line-height: 33px;
+}
+
+.project-details-1 .logos {
+  height: 10vh;
+}
+
+.project-details-1 .logos img {
+  height: 100%;
+  width: 100%;
+}
+
+.project-details-1 a {
+  color: #1b1b1b;
+  text-decoration: none;
+  font-family: "Fira Code", monospace;
+  font-size: 24px;
+}
+
+.project-image-1 {
+  height: 100%;
+  width: 100%;
+}
+
+.project-image-1 img {
+  width: 100%;
+  height: auto;
+}
+
+.project-details-2 {
+  background-color: crimson;
+}
+
+.project-image-2 {
+  background-color: aqua;
+}
+/*# sourceMappingURL=Projects.css.map */

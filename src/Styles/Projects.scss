@@ -1,0 +1,102 @@
+@import "./Variables.scss";
+
+.title {
+  background-color: #ffff;
+  text-align: center;
+  font-family: $featured-font;
+  color: $primary-color;
+  font-size: 24px;
+  letter-spacing: 0.26em;
+  padding: 1rem;
+}
+
+.project-1,
+.project-2,
+.project-3,
+.project-4 {
+  height: 50vh; //comment out
+
+  .project-left {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 50vh;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .project-right {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 50vh;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.project-1 {
+  background-color: #ffff;
+}
+.project-2 {
+  background-color: $secondary-color;
+}
+.project-3 {
+  background-color: #ffff;
+}
+.project-4 {
+  background-color: $secondary-color;
+}
+
+.project-details-1 {
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  h2 {
+    font-family: $featured-font;
+    font-size: 24px;
+    letter-spacing: 0.26em;
+    color: $secondary-color;
+  }
+
+  p {
+    font-family: $body-font;
+    font-size: 20px;
+    color: $primary-color;
+    text-align: left;
+    line-height: 33px;
+  }
+
+  .logos {
+    height: 10vh;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  a {
+    color: #1b1b1b;
+    text-decoration: none;
+    font-family: $title-font;
+    font-size: 24px;
+  }
+}
+.project-image-1 {
+  height: 100%;
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.project-details-2 {
+  background-color: crimson;
+}
+.project-image-2 {
+  background-color: aqua;
+}
