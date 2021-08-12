@@ -1,0 +1,111 @@
+@import "./Variables.scss";
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured {
+  height: 50vh;
+  width: 90%;
+  padding-left: 20%;
+  width: 100%;
+  background-color: #ffff;
+  z-index: 1;
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.featured-text {
+  width: 100%;
+  height: 100%;
+  //   border: red 2px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h4 {
+    font-family: $featured-font;
+    font-size: 24px;
+    letter-spacing: 0.26em;
+    color: $secondary-color;
+  }
+  h2 {
+    font-family: $body-font;
+    font-size: 36px;
+    color: $primary-color;
+    line-height: 49px;
+  }
+  p {
+    font-family: $body-font;
+    font-size: 20px;
+    color: $primary-color;
+    text-align: center;
+    line-height: 33px;
+  }
+}
+
+.logos {
+  height: 70px;
+  display: flex;
+  img {
+    height: 100%;
+    width: auto;
+    padding: 0.5rem;
+  }
+}
+
+.featured-image {
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.cards-container {
+  height: 50vh;
+  padding: 0 20%;
+  background-color: $secondary-color;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card1,
+.card2,
+.card3 {
+  @include flexCenter();
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  @include flexCenter();
+  flex-direction: column;
+  text-align: center;
+  width: 70%;
+  height: 75%;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: white;
+}
+
+.card-icon {
+  font-size: 48px;
+}
+.card-title {
+  color: $secondary-color;
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0.5rem;
+  font-family: $slogan-font;
+}
+.card-text {
+  color: $primary-color;
+  font-size: 18px;
+  font-family: $body-font;
+  line-height: 33px;
+}
