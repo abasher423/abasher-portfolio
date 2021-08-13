@@ -1,10 +1,11 @@
 @import "./Variables.scss";
 
 .title {
-  background-color: #ffff;
+  background-color: #1b1b1b;
   text-align: center;
+  text-transform: uppercase;
   font-family: $featured-font;
-  color: $primary-color;
+  color: #ffff;
   font-size: 24px;
   letter-spacing: 0.26em;
   padding: 1rem;
@@ -36,23 +37,24 @@
   background-color: #ffff;
 }
 .project-2 {
-  background-color: $secondary-color;
+  background-color: #ffff;
 }
 .project-3 {
   background-color: #ffff;
 }
 .project-4 {
-  background-color: $secondary-color;
+  background-color: #ffff;
 }
 
-.project-details-1 {
+.project-details-1,
+.project-details-2 {
   height: 100%;
   width: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center; //(experimnt)
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 
   h2 {
     font-family: $featured-font;
@@ -62,27 +64,36 @@
   }
 
   p {
-    font-family: $body-font;
-    font-size: 20px;
+    font-family: $slogan-font;
+    font-size: 18px;
     color: $primary-color;
     text-align: left;
-    line-height: 33px;
+    margin: 2vh 0;
   }
 
   .logos {
-    height: 10vh;
+    height: 7vh;
+    margin: 2vh 0;
     img {
       height: 100%;
       width: 100%;
     }
   }
 
-  a {
-    color: #1b1b1b;
-    text-decoration: none;
-    font-family: $title-font;
-    font-size: 24px;
+  .links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    a {
+      color: #1b1b1b;
+      text-decoration: none;
+      font-family: $title-font;
+      font-size: 20px;
+    }
   }
+}
+.project-details-1 {
+  justify-content: center;
 }
 .project-image-1 {
   height: 100%;
@@ -95,8 +106,22 @@
 }
 
 .project-details-2 {
-  background-color: crimson;
+  ul {
+    width: 100%;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+
+    li {
+      font-weight: 700;
+      padding-top: 0.5rem;
+      font-family: $featured-font;
+    }
+  }
 }
 .project-image-2 {
-  background-color: aqua;
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
