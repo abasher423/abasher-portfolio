@@ -13,8 +13,12 @@ import node from '../images/node.png';
 import express from '../images/express.png';
 import mongoose from '../images/mongoose.png';
 import mongo from '../images/mongo.png';
+import mongo2 from '../images/mongo2.png';
+import vue from '../images/vue.png';
 import projectImage1 from '../images/portfolio.PNG';
 import projectImage2 from '../images/project-image-2.png';
+import projectImage4 from '../images/rock-paper-scissors.png';
+import projectImage5 from '../images/microsoft.png';
 
 const Projects = () => {
     return (
@@ -114,14 +118,103 @@ const Projects = () => {
 
             {/* -------------------------- PROJECT 3 ------------------- */}
             <div className="project-3">
-                <div className="project-details-3"></div>
-                <div className="project-image-3"></div>
+                <div className="project-left">
+                    <div className="project-details-3">
+                        <h2>Air Ticket Sales</h2>
+                        <p>
+                            Contributed on developing the Air Ticket Sales (ATS) system which keeps records of tickets sold
+                             by a Travel Agent company to customers and produce the reports required by the Financial Department.
+                              It also allows a Travel Agent company to give discounts to their valued customers. This project was
+                               created using <span style={{ color: "#e44d26"}}>HTML,</span>
+                             <span style={{ color: "#379ad6"}}>CSS, </span><span style={{color: "#41b783"}}>Vue, </span>
+                             <span style={{color: "#83cd29"}}>Node, </span> and <span style={{ color: "#469739" }}> MongoDB</span>.
+                        </p>
+                        <div className="logos">
+                            <img src={html} alt="HTML" />
+                            <img src={css} alt="CSS" />
+                            <img src={vue} alt="Vue" />
+                            <img src={node} alt="Nodejs" />
+                            <img src={mongo2} alt="MongoDB" />
+                        </div>
+                        <div className="links">
+                            <a href="https://github.com/abasher423/abasher-portfolio">
+                                <FontAwesomeIcon icon={faGithub} size="1x"/> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div className="project-image-3">
+                        <a href="/">
+                            <img src={projectImage1} alt="portfolio" />
+                        </a>
+                    </div>
+                </div>
             </div>
 
             {/* -------------------------- PROJECT 4 ------------------- */}
             <div className="project-4">
-                <div className="project-details-4"></div>
-                <div className="project-image-4"></div>
+                <div className="project-right">
+                    <div className="project-image-4">
+                        <a href="https://velular.herokuapp.com/">
+                            <img src={projectImage4} alt="rock-paper-scissors" />
+                        </a>
+                    </div>
+                    <div className="project-details-4">
+                        <h2>Rock Paper Scissors</h2>
+                            <p>
+                                This is a simple yet rewarding rock-paper-scissors game as I have learnt vital web development principles.
+                                 I implemented key JavaScript fundamentals and learnt about the DOM and DOM manipulation, the use and
+                                  importance of event delegation and event listeners, and why we even use frontend libraries such
+                                   as React, Vue etc. This website was created using <span style={{ color: "#e44d26"}}>HTML, </span> 
+                                <span style={{ color: "#389ad6"}}> CSS</span> and<span style={{color: "#f7df1d"}}> JavaScript.</span>
+                            </p>
+                            <div className="logos">
+                                <img src={html} alt="HTML" />
+                                <img src={css} alt="CSS" />
+                                <img src={js} alt="JavaScript" />
+                            </div>
+                            <div className="links">
+                            <a href="https://github.com/abasher423/Velular">
+                                <FontAwesomeIcon icon={faGithub} size="1x"/> View on GitHub
+                            </a>
+                            <a href="https://velular.herokuapp.com/">
+                                <FontAwesomeIcon icon={faCodepen} size="1x"/> View the App
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            {/* -------------------------- PROJECT 5 ------------------- */}
+            <div className="project-5">
+            <div className="project-left">
+                    <div className="project-details-3">
+                        <h2>Microsoft Clone</h2>
+                        <p>
+                            This is a Microsoft landing page clone developed using pure HTML and CSS. The main aim of this project 
+                            was to become more fluent with the mark up language and confident with CSS styling and
+                                positioning elements. This website was created using only <span style={{ color: "#e44d26"}}>HTML </span> and 
+                            <span style={{ color: "#389ad6"}}> CSS.</span>
+                        </p>
+                        <div className="logos">
+                            <img src={html} alt="HTML" />
+                            <img src={css} alt="CSS" />
+                        </div>
+                        <div className="links">
+                            <a href="https://github.com/abasher423/abasher-portfolio">
+                                <FontAwesomeIcon icon={faGithub} size="1x"/> View on GitHub
+                            </a>
+                            <a href="https://velular.herokuapp.com/">
+                                <FontAwesomeIcon icon={faCodepen} size="1x"/> View the App
+                            </a>
+                        </div>
+                    </div>
+                    <div className="project-image-3">
+                        <a href="/">
+                            <img src={projectImage5} alt="microsoft" />
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     );

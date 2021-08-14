@@ -14,7 +14,8 @@
 .project-1,
 .project-2,
 .project-3,
-.project-4 {
+.project-4,
+.project-5 {
   height: 50vh; //comment out
 
   .project-left {
@@ -40,19 +41,24 @@
   background-color: #ffff;
 }
 .project-3 {
-  background-color: #ffff;
+  background-color: #1b1b1b;
 }
 .project-4 {
   background-color: #ffff;
 }
+.project-5 {
+  background-color: #1b1b1b;
+}
 
 .project-details-1,
-.project-details-2 {
+.project-details-2,
+.project-details-3,
+.project-details-4 {
   height: 100%;
   width: auto;
   display: flex;
   flex-direction: column;
-  // justify-content: center; //(experimnt)
+  // justify-content: center; //(experiment)
   align-items: center;
   padding: 1rem;
 
@@ -68,12 +74,12 @@
     font-size: 18px;
     color: $primary-color;
     text-align: left;
-    margin: 2vh 0;
+    margin: 1vh 0;
   }
 
   .logos {
     height: 7vh;
-    margin: 2vh 0;
+    margin: 1vh 0;
     img {
       height: 100%;
       width: 100%;
@@ -95,9 +101,14 @@
 .project-details-1 {
   justify-content: center;
 }
-.project-image-1 {
+.project-image-1,
+.project-image-2,
+.project-image-3,
+.project-image-4 {
   height: 100%;
   width: 100%;
+  display: flex;
+  align-items: center;
 
   img {
     width: 100%;
@@ -119,9 +130,16 @@
     }
   }
 }
-.project-image-2 {
-  img {
-    width: 100%;
-    height: auto;
+
+.project-details-3 {
+  justify-content: center;
+  h2,
+  p,
+  .links a {
+    color: #ffff;
   }
+}
+
+.project-details-4 {
+  justify-content: center;
 }

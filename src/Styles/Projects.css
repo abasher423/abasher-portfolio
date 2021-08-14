@@ -12,14 +12,16 @@
 .project-1,
 .project-2,
 .project-3,
-.project-4 {
+.project-4,
+.project-5 {
   height: 50vh;
 }
 
 .project-1 .project-left,
 .project-2 .project-left,
 .project-3 .project-left,
-.project-4 .project-left {
+.project-4 .project-left,
+.project-5 .project-left {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 60% 40%;
@@ -32,7 +34,8 @@
 .project-1 .project-right,
 .project-2 .project-right,
 .project-3 .project-right,
-.project-4 .project-right {
+.project-4 .project-right,
+.project-5 .project-right {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40% 60%;
@@ -51,15 +54,21 @@
 }
 
 .project-3 {
-  background-color: #ffff;
+  background-color: #1b1b1b;
 }
 
 .project-4 {
   background-color: #ffff;
 }
 
+.project-5 {
+  background-color: #1b1b1b;
+}
+
 .project-details-1,
-.project-details-2 {
+.project-details-2,
+.project-details-3,
+.project-details-4 {
   height: 100%;
   width: auto;
   display: -webkit-box;
@@ -76,7 +85,9 @@
 }
 
 .project-details-1 h2,
-.project-details-2 h2 {
+.project-details-2 h2,
+.project-details-3 h2,
+.project-details-4 h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   letter-spacing: 0.26em;
@@ -84,28 +95,36 @@
 }
 
 .project-details-1 p,
-.project-details-2 p {
+.project-details-2 p,
+.project-details-3 p,
+.project-details-4 p {
   font-family: "Monda", sans-serif;
   font-size: 18px;
   color: #1b1b1b;
   text-align: left;
-  margin: 2vh 0;
+  margin: 1vh 0;
 }
 
 .project-details-1 .logos,
-.project-details-2 .logos {
+.project-details-2 .logos,
+.project-details-3 .logos,
+.project-details-4 .logos {
   height: 7vh;
-  margin: 2vh 0;
+  margin: 1vh 0;
 }
 
 .project-details-1 .logos img,
-.project-details-2 .logos img {
+.project-details-2 .logos img,
+.project-details-3 .logos img,
+.project-details-4 .logos img {
   height: 100%;
   width: 100%;
 }
 
 .project-details-1 .links,
-.project-details-2 .links {
+.project-details-2 .links,
+.project-details-3 .links,
+.project-details-4 .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,7 +134,9 @@
 }
 
 .project-details-1 .links a,
-.project-details-2 .links a {
+.project-details-2 .links a,
+.project-details-3 .links a,
+.project-details-4 .links a {
   color: #1b1b1b;
   text-decoration: none;
   font-family: "Fira Code", monospace;
@@ -128,12 +149,24 @@
           justify-content: center;
 }
 
-.project-image-1 {
+.project-image-1,
+.project-image-2,
+.project-image-3,
+.project-image-4 {
   height: 100%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.project-image-1 img {
+.project-image-1 img,
+.project-image-2 img,
+.project-image-3 img,
+.project-image-4 img {
   width: 100%;
   height: auto;
 }
@@ -151,8 +184,21 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.project-image-2 img {
-  width: 100%;
-  height: auto;
+.project-details-3 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project-details-3 h2,
+.project-details-3 p,
+.project-details-3 .links a {
+  color: #ffff;
+}
+
+.project-details-4 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=Projects.css.map */
