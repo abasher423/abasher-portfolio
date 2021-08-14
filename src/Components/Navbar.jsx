@@ -18,7 +18,7 @@ const Navbar = () => {
             <div className="name">
                 <a href="/">
                     <span>&lt;</span>
-                    Abdifatah Basher
+                    A.B
                     <span>/&gt;</span>
                 </a>
             </div>
