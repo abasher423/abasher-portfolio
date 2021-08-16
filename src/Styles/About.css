@@ -1,0 +1,133 @@
+.about-container {
+  height: 110vh;
+  background-color: #ffff;
+}
+
+.about {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.about h1 {
+  margin-top: 2rem;
+  font-size: 28px;
+  color: #e63946;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about p {
+  margin-top: 2rem;
+  font-size: 18px;
+  font-family: "Monda", sans-serif;
+}
+
+.interests-container {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.interests h2,
+.education h2 {
+  font-size: 24px;
+  font-family: "Fira Code", monospace;
+  text-align: left;
+  color: #e63946;
+}
+
+.interests ul,
+.education ul {
+  margin: 0.5rem 3rem 0;
+}
+
+.interests ul li,
+.education ul li {
+  font-family: "Open Sans", sans-serif;
+}
+
+.education-content {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "icon h3 h3" "icon h4 h4";
+}
+
+.education-content .icon {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: icon;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1b1b1b;
+}
+
+.education-content h3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-area: h3;
+  font-size: 1rem;
+  font-family: "Monda", sans-serif;
+}
+
+.education-content h4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-area: h4;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.75rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.education-content-2 {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "icon h3 h3 h3 h3 h3" "icon h4 h4 h4 h4 h4";
+}
+
+.education-content-2 .icon-2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: icon;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1b1b1b;
+}
+
+.education-content-2 h3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-area: h3;
+  font-size: 1rem;
+  font-family: "Monda", sans-serif;
+}
+
+.education-content-2 h4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-area: h4;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.75rem;
+  font-family: "Open Sans", sans-serif;
+}
+/*# sourceMappingURL=About.css.map */

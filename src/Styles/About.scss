@@ -1,0 +1,97 @@
+@import "./Variables.scss";
+
+.about-container {
+  height: 110vh;
+  background-color: #ffff;
+}
+
+.about {
+  width: 45%;
+  margin: 0 auto;
+
+  h1 {
+    margin-top: 2rem;
+    font-size: 28px;
+    color: $secondary-color;
+    font-family: $featured-font;
+  }
+
+  p {
+    margin-top: 2rem;
+    font-size: 18px;
+    font-family: $slogan-font;
+  }
+}
+
+.interests-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.interests,
+.education {
+  h2 {
+    font-size: 24px;
+    font-family: $title-font;
+    text-align: left;
+    color: $secondary-color;
+  }
+  ul {
+    margin: 0.5rem 3rem 0;
+    li {
+      font-family: $body-font;
+    }
+  }
+}
+
+.education-content {
+  display: grid;
+  grid-template-areas:
+    "icon h3 h3"
+    "icon h4 h4";
+
+  .icon {
+    grid-area: icon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1b1b1b;
+  }
+  h3 {
+    grid-area: h3;
+    font-size: 1rem;
+    font-family: $slogan-font;
+  }
+  h4 {
+    grid-area: h4;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.75rem;
+    font-family: $body-font;
+  }
+}
+.education-content-2 {
+  display: grid;
+  grid-template-areas:
+    "icon h3 h3 h3 h3 h3"
+    "icon h4 h4 h4 h4 h4";
+
+  .icon-2 {
+    grid-area: icon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1b1b1b;
+  }
+  h3 {
+    grid-area: h3;
+    font-size: 1rem;
+    font-family: $slogan-font;
+  }
+  h4 {
+    grid-area: h4;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.75rem;
+    font-family: $body-font;
+  }
+}
