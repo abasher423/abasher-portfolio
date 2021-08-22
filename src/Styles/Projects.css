@@ -1,74 +1,46 @@
 .title {
-  background-color: #1b1b1b;
+  background-color: #e2e6ec;
   text-align: center;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  color: #ffff;
+  color: #1b1b1b;
   font-size: 24px;
   letter-spacing: 0.26em;
   padding: 1rem;
 }
 
-.project-1,
-.project-2,
-.project-3,
-.project-4,
-.project-5 {
-  height: 50vh;
+#projects {
+  height: 100%;
+  width: 100%;
+  background-color: #ffff;
 }
 
-.project-1 .project-left,
-.project-2 .project-left,
-.project-3 .project-left,
-.project-4 .project-left,
-.project-5 .project-left {
+.project .project-left {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 60% 40%;
       grid-template-columns: 60% 40%;
-  height: 50vh;
+  height: 100%;
   width: 80%;
-  margin: 0 auto;
+  margin: 1rem auto 0 auto;
 }
 
-.project-1 .project-right,
-.project-2 .project-right,
-.project-3 .project-right,
-.project-4 .project-right,
-.project-5 .project-right {
+.project .project-right {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40% 60%;
       grid-template-columns: 40% 60%;
-  height: 50vh;
+  height: 100%;
   width: 80%;
   margin: 0 auto;
 }
 
-.project-1 {
-  background-color: #ffff;
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.project-2 {
-  background-color: #ffff;
-}
-
-.project-3 {
-  background-color: #1b1b1b;
-}
-
-.project-4 {
-  background-color: #ffff;
-}
-
-.project-5 {
-  background-color: #1b1b1b;
-}
-
-.project-details-1,
-.project-details-2,
-.project-details-3,
-.project-details-4 {
+.project-details {
   height: 100%;
   width: auto;
   display: -webkit-box;
@@ -78,26 +50,23 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem;
 }
 
-.project-details-1 h2,
-.project-details-2 h2,
-.project-details-3 h2,
-.project-details-4 h2 {
+.project-details h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   letter-spacing: 0.26em;
   color: #e63946;
 }
 
-.project-details-1 p,
-.project-details-2 p,
-.project-details-3 p,
-.project-details-4 p {
+.project-details p {
   font-family: "Monda", sans-serif;
   font-size: 18px;
   color: #1b1b1b;
@@ -105,26 +74,16 @@
   margin: 1vh 0;
 }
 
-.project-details-1 .logos,
-.project-details-2 .logos,
-.project-details-3 .logos,
-.project-details-4 .logos {
-  height: 7vh;
-  margin: 1vh 0;
+.project-details .logos {
+  height: 70px;
 }
 
-.project-details-1 .logos img,
-.project-details-2 .logos img,
-.project-details-3 .logos img,
-.project-details-4 .logos img {
+.project-details .logos img {
   height: 100%;
   width: 100%;
 }
 
-.project-details-1 .links,
-.project-details-2 .links,
-.project-details-3 .links,
-.project-details-4 .links {
+.project-details .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,42 +92,33 @@
   width: 100%;
 }
 
-.project-details-1 .links a,
-.project-details-2 .links a,
-.project-details-3 .links a,
-.project-details-4 .links a {
+.project-details .links a {
   color: #1b1b1b;
   text-decoration: none;
   font-family: "Fira Code", monospace;
   font-size: 20px;
 }
 
-.project-details-1 {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.project-image-1,
-.project-image-2,
-.project-image-3,
-.project-image-4 {
-  height: 100%;
-  width: 100%;
+.project-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  height: 100%;
 }
 
-.project-image-1 img,
-.project-image-2 img,
-.project-image-3 img,
-.project-image-4 img {
-  width: 100%;
-  height: auto;
+.project-image img {
+  height: 100%;
+  width: auto;
+}
+
+.project-image:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .project-details-2 ul {
@@ -180,25 +130,109 @@
 
 .project-details-2 ul li {
   font-weight: 700;
-  padding-top: 0.5rem;
+  padding-top: 0.25rem;
   font-family: "Montserrat", sans-serif;
 }
 
-.project-details-3 {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media (max-width: 1224px) {
+  .project .project-left,
+  .project .project-right {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    width: 90%;
+  }
+  .project-details .logos {
+    height: 3vw;
+  }
+  .project-details h2 {
+    font-size: 20px;
+  }
+  .project-details p {
+    font-size: 15px;
+  }
+  .project-details .links a {
+    font-size: 16px;
+  }
+  .project-details-2 ul li {
+    font-size: 15px;
+  }
 }
 
-.project-details-3 h2,
-.project-details-3 p,
-.project-details-3 .links a {
-  color: #ffff;
+@media (max-width: 768px) {
+  .project {
+    height: 100%;
+  }
+  .project .project-left,
+  .project .project-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .project .project-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .project-image {
+    padding: 2rem;
+  }
+  .project-details {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .project-details .logos {
+    height: 4.5vw;
+  }
+  .project-details h2 {
+    font-size: 16px;
+    border-bottom: 1px solid red;
+  }
+  .project-details p {
+    font-size: 14px;
+    margin: 2rem 0;
+  }
+  .project-details .links {
+    margin-top: 2rem;
+  }
+  .project-details .links a {
+    font-size: 16px;
+  }
+  .project-details-2 ul {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    margin-bottom: 2rem;
+  }
+  .project-details-2 ul li {
+    font-size: 13px;
+  }
 }
 
-.project-details-4 {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media (max-width: 375px) {
+  .project-details-2 ul {
+    padding: 0 2rem;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+  .project-details-2 ul li {
+    font-size: 13px;
+  }
+  .project-details .logos {
+    height: 35px;
+  }
+  .project-details h2 {
+    font-size: 1.2rem;
+  }
+  .project-details p {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=Projects.css.map */
