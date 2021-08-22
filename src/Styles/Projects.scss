@@ -1,64 +1,50 @@
 @import "./Variables.scss";
 
 .title {
-  background-color: #1b1b1b;
+  background-color: $light-color;
   text-align: center;
   text-transform: uppercase;
   font-family: $featured-font;
-  color: #ffff;
+  color: #1b1b1b;
   font-size: 24px;
   letter-spacing: 0.26em;
   padding: 1rem;
 }
 
-.project-1,
-.project-2,
-.project-3,
-.project-4,
-.project-5 {
-  height: 50vh; //comment out
+#projects {
+  height: 100%;
+  width: 100%;
+  background-color: #ffff;
+}
 
+.project {
   .project-left {
     display: grid;
     grid-template-columns: 60% 40%;
-    height: 50vh;
+    height: 100%;
     width: 80%;
-    margin: 0 auto;
+    margin: 1rem auto 0 auto;
   }
   .project-right {
     display: grid;
     grid-template-columns: 40% 60%;
-    height: 50vh;
+    height: 100%;
     width: 80%;
     margin: 0 auto;
   }
 }
 
-.project-1 {
-  background-color: #ffff;
-}
-.project-2 {
-  background-color: #ffff;
-}
-.project-3 {
-  background-color: #1b1b1b;
-}
-.project-4 {
-  background-color: #ffff;
-}
-.project-5 {
-  background-color: #1b1b1b;
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.project-details-1,
-.project-details-2,
-.project-details-3,
-.project-details-4 {
+.project-details {
   height: 100%;
   width: auto;
   display: flex;
   flex-direction: column;
-  // justify-content: center; //(experiment)
+  justify-content: center; //(experiment)
   align-items: center;
   padding: 1rem;
 
@@ -78,8 +64,7 @@
   }
 
   .logos {
-    height: 7vh;
-    margin: 1vh 0;
+    height: 70px;
     img {
       height: 100%;
       width: 100%;
@@ -98,22 +83,21 @@
     }
   }
 }
-.project-details-1 {
-  justify-content: center;
-}
-.project-image-1,
-.project-image-2,
-.project-image-3,
-.project-image-4 {
-  height: 100%;
-  width: 100%;
+
+.project-image {
   display: flex;
   align-items: center;
+  transition: all 0.2s ease-in-out;
+  height: 100%;
 
   img {
-    width: 100%;
-    height: auto;
+    height: 100%;
+    width: auto;
   }
+}
+
+.project-image:hover {
+  transform: scale(1.02);
 }
 
 .project-details-2 {
@@ -125,21 +109,121 @@
 
     li {
       font-weight: 700;
-      padding-top: 0.5rem;
+      padding-top: 0.25rem;
       font-family: $featured-font;
     }
   }
 }
 
-.project-details-3 {
-  justify-content: center;
-  h2,
-  p,
-  .links a {
-    color: #ffff;
+@media (max-width: $breakpoint-laptop) {
+  .project {
+    .project-left,
+    .project-right {
+      grid-template-columns: 50% 50%;
+      width: 90%;
+    }
+  }
+
+  .project-details {
+    .logos {
+      height: 3vw;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 15px;
+    }
+    .links {
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .project-details-2 {
+    ul {
+      li {
+        font-size: 15px;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-tablet) {
+  .project {
+    height: 100%;
+    .project-left,
+    .project-right {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+    }
+
+    .project-right {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .project-image {
+    padding: 2rem;
+  }
+
+  .project-details {
+    justify-content: space-around;
+    .logos {
+      height: 4.5vw;
+    }
+    h2 {
+      font-size: 16px;
+      border-bottom: 1px solid red;
+    }
+    p {
+      font-size: 14px;
+      margin: 2rem 0;
+    }
+    .links {
+      margin-top: 2rem;
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .project-details-2 {
+    ul {
+      columns: 3;
+      -webkit-columns: 3;
+      -moz-columns: 3;
+      margin-bottom: 2rem;
+      li {
+        font-size: 13px;
+      }
+    }
   }
 }
 
-.project-details-4 {
-  justify-content: center;
-}
+@media (max-width: $breakpoint-iphone-x) {
+  .project-details-2 {
+    ul {
+      padding: 0 2rem;
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      li {
+        font-size: 13px;
+      }
+    }
+  }
+  .project-details {
+    .logos {
+      height: 35px;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+} ;
