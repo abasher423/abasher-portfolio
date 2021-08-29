@@ -1,41 +1,50 @@
-import '../Styles/Home.css'
+import '../Styles/Home.css';
 import Typical from 'react-typical';
 import star from '../images/star.png';
+import { Icon } from '@iconify/react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Home = () => {
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, [])
     return (
         <div className="home">
-            {/* ---------------- Slogan --------------- */}
-            <div className="slogan">
-                <div className="slogan1">
-                    <h3><span>Better</span> design,</h3>
+            <div className="home-content">
+                <div className="content">
+                    <div className="home-image" data-aos="fade-right">
+                        <div className="content-image"></div>
+                    </div>
+                    <div className="home-text">
+                        <h1 data-aos="fade-left">Frontend Developer</h1>
+                        <h2 data-aos="fade-left" data-aos-delay="400">
+                            <span>&lt;</span>
+                            Abdifatah Basher
+                            <span>/&gt;</span>
+                        </h2>
+                        <h3 data-aos="fade-left" data-aos-delay="800">
+                            <Typical
+                            steps={[
+                                "Frontend Developer 💻", 1000,
+                                "Backend Developer ⌨️", 1000,
+                                "Recent Graduate 🎓", 1000,
+                                "Tech Enthusiast ❤️", 1000,
+                                "Quick Learner 📚", 1000,
+                                "Reliable 🤝", 1000
+                            ]}
+                            loop={Infinity}
+                            />
+                        </h3>
+                        <h4 data-aos="fade-left" data-aos-delay="1000">
+                            <a href="#home">
+                            Let's see my work <Icon icon="akar-icons:arrow-down"/>
+                            </a>
+                        </h4>
+                    </div>
                 </div>
-                <div className="slogan2">
-                    <h3><span>Better</span> experience</h3>
-                </div>
-            </div>
-            <div className="slogan3">
-                    <h3>
-                        {/* <span>&lt;</span> */}
-                        <Typical
-                        steps={[
-                            "Frontend Developer 💻", 1000,
-                            "Backend Developer ⌨️", 1000,
-                            "Recent Graduate 🎓", 1000,
-                            "Tech Enthusiast ❤️", 1000,
-                            "Quick Learner 📚", 1000,
-                            "Reliable 🤝", 1000
-                        ]}
-                        loop={Infinity}
-                        />
-                        {/* <span>/&gt;</span> */}
-                    </h3>
-                </div>
-
-            {/* ---------------------- scroll ---------------------- */}
-            <div className="scroll">
-                <h4>Let’s see my <span>work</span> 👇</h4>
-            </div>
+            </div>  
 
             {/* ------------------ stars ------------------------------ */}
             <div className="stars">
