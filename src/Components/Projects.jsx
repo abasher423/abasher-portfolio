@@ -15,20 +15,29 @@ import mongoose from '../images/mongoose.png';
 import mongo from '../images/mongo.png';
 import mongo2 from '../images/mongo2.png';
 import vue from '../images/vue.png';
-import projectImage1 from '../images/portfolio.PNG';
+import java from '../images/java.png';
+import projectImage1 from '../images/portfolio.png';
 import projectImage2 from '../images/project-image-2.png';
+import projectImage3 from '../images/ats.png';
+import projectImage35 from '../images/project3.5.png';
 import projectImage4 from '../images/rock-paper-scissors.png';
 import projectImage5 from '../images/microsoft.png';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Projects = () => {
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, [])
     return (
-        <div className="projects">
-            <h1 className="title" id="#projects">Projects</h1>
+        <div id="projects">
+            <h1 className="title">Projects</h1>
 
             {/* -------------------------- PROJECT 1 ------------------- */}
-            <div className="project-1">
+            <div className="project" data-aos="fade-up">
                 <div className="project-left">
-                    <div className="project-details-1">
+                    <div className="project-details">
                         <h2>Portfolio Website</h2>
                         <p>
                             This is a fully responsive portfolio website created by me. While working
@@ -54,7 +63,7 @@ const Projects = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="project-image-1">
+                    <div className="project-image">
                         <a href="/">
                             <img src={projectImage1} alt="portfolio" />
                         </a>
@@ -63,14 +72,14 @@ const Projects = () => {
             </div>
 
             {/* -------------------------- PROJECT 2 ------------------- */}
-            <div className="project-2">
+            <div className="project" data-aos="fade-up">
                 <div className="project-right">
-                    <div className="project-image-2">
+                    <div className="project-image">
                         <a href="https://velular.herokuapp.com/">
                             <img src={projectImage2} alt="velular-2" />
                         </a>
                     </div>
-                    <div className="project-details-2">
+                    <div className="project-details project-details-2">
                         <h2>Velular</h2>
                             <p>
                                 Velular is an E-Commerce web application that allows users to buy and sell 
@@ -100,7 +109,9 @@ const Projects = () => {
                                 <img src={mui} alt="Material-UI" />
                                 <img src={redux} alt="Redux" />
                                 <img src={node} alt="Node.js" />
-                                <img src={express} alt="Express.js" />
+                            </div>
+                            <div className="logos">
+                            <img src={express} alt="Express.js" />
                                 <img src={mongoose} alt="Mongoosejs" />
                                 <img src={mongo} alt="Mongodb" />
                             </div>
@@ -117,9 +128,9 @@ const Projects = () => {
             </div>
 
             {/* -------------------------- PROJECT 3 ------------------- */}
-            <div className="project-3">
+            <div className="project" data-aos="fade-up">
                 <div className="project-left">
-                    <div className="project-details-3">
+                    <div className="project-details">
                         <h2>Air Ticket Sales</h2>
                         <p>
                             Contributed on developing the Air Ticket Sales (ATS) system which keeps records of tickets sold
@@ -129,7 +140,7 @@ const Projects = () => {
                              <span style={{ color: "#379ad6"}}>CSS, </span><span style={{color: "#41b783"}}>Vue, </span>
                              <span style={{color: "#83cd29"}}>Node, </span> and <span style={{ color: "#469739" }}> MongoDB</span>.
                         </p>
-                        <div className="logos">
+                        <div className="logos logos-2">
                             <img src={html} alt="HTML" />
                             <img src={css} alt="CSS" />
                             <img src={vue} alt="Vue" />
@@ -142,23 +153,46 @@ const Projects = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="project-image-3">
-                        <a href="/">
-                            <img src={projectImage1} alt="portfolio" />
+                    <div className="project-image">
+                        <a href="https://github.com/abasher423/abasher-portfolio">
+                            <img src={projectImage3} alt="portfolio" />
                         </a>
                     </div>
                 </div>
             </div>
 
-            {/* -------------------------- PROJECT 4 ------------------- */}
-            <div className="project-4">
+             {/* -------------------------- PROJECT 3.5 ------------------- */}
+            <div className="project" data-aos="fade-up">
                 <div className="project-right">
-                    <div className="project-image-4">
-                        <a href="https://velular.herokuapp.com/">
-                            <img src={projectImage4} alt="rock-paper-scissors" />
+                    <div className="project-image">
+                        <a href="https://github.com/abasher423/compiler">
+                            <img src={projectImage35} alt="portfolio" />
                         </a>
                     </div>
-                    <div className="project-details-4">
+                    <div className="project-details">
+                        <h2>Java Compiler</h2>
+                        <p>
+                            This is a Java project i completed as part of my studies. The task involved given functional code for
+                             parsing, build a symbol table, type checking and variable allocation portotype. The basic compiler supported method
+                              declaration, method calls and arrays. This project really gave me an insight into how a compiler functions
+                               and hands on experience using Java.
+                        </p>
+                        <div className="logos logos-2">
+                            <img src={java} alt="Java" />
+                        </div>
+                        <div className="links">
+                            <a href="https://github.com/abasher423/compiler">
+                                <FontAwesomeIcon icon={faGithub} size="1x"/> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* -------------------------- PROJECT 4 ------------------- */}
+            <div className="project" data-aos="fade-up">
+                <div className="project-left">
+                    <div className="project-details">
                         <h2>Rock Paper Scissors</h2>
                             <p>
                                 This is a simple yet rewarding rock-paper-scissors game as I have learnt vital web development principles.
@@ -173,22 +207,32 @@ const Projects = () => {
                                 <img src={js} alt="JavaScript" />
                             </div>
                             <div className="links">
-                            <a href="https://github.com/abasher423/Velular">
+                            <a href="https://github.com/abasher423/rock-paper-scissors">
                                 <FontAwesomeIcon icon={faGithub} size="1x"/> View on GitHub
                             </a>
-                            <a href="https://velular.herokuapp.com/">
+                            <a href="https://abasher423.github.io/rock-paper-scissors/">
                                 <FontAwesomeIcon icon={faCodepen} size="1x"/> View the App
                             </a>
                         </div>
+                    </div>
+                    <div className="project-image">
+                        <a href="https://abasher423.github.io/rock-paper-scissors/">
+                            <img src={projectImage4} alt="rock-paper-scissors" />
+                        </a>
                     </div>
                 </div>
             </div>
 
 
             {/* -------------------------- PROJECT 5 ------------------- */}
-            <div className="project-5">
-            <div className="project-left">
-                    <div className="project-details-3">
+            <div className="project" data-aos="fade-up">
+            <div className="project-right">
+                    <div className="project-image">
+                        <a href="https://abasher423.github.io/microsoft/">
+                            <img src={projectImage5} alt="microsoft" />
+                        </a>
+                    </div>
+                    <div className="project-details">
                         <h2>Microsoft Clone</h2>
                         <p>
                             This is a Microsoft landing page clone developed using pure HTML and CSS. The main aim of this project 
@@ -201,18 +245,13 @@ const Projects = () => {
                             <img src={css} alt="CSS" />
                         </div>
                         <div className="links">
-                            <a href="https://github.com/abasher423/abasher-portfolio">
+                            <a href="https://github.com/abasher423/microsoft">
                                 <FontAwesomeIcon icon={faGithub} size="1x"/> View on GitHub
                             </a>
-                            <a href="https://velular.herokuapp.com/">
+                            <a href="https://abasher423.github.io/microsoft/">
                                 <FontAwesomeIcon icon={faCodepen} size="1x"/> View the App
                             </a>
                         </div>
-                    </div>
-                    <div className="project-image-3">
-                        <a href="/">
-                            <img src={projectImage5} alt="microsoft" />
-                        </a>
                     </div>
                 </div>
             </div>
