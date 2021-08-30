@@ -80,7 +80,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-.featured-image:hover img {
+.featured-image img:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }

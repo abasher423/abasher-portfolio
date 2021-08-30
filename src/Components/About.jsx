@@ -1,5 +1,5 @@
 import '../Styles/About.css';
-import { Icon  } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import 'aos/dist/aos.css';
 import Aos from 'aos';
 import { useEffect } from 'react';

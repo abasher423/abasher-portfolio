@@ -89,15 +89,14 @@ img {
   align-items: center;
   transition: all 0.2s ease-in-out;
   height: 100%;
+  &:hover {
+    transform: scale(1.02);
+  }
 
   img {
     height: 100%;
     width: auto;
   }
-}
-
-.project-image:hover {
-  transform: scale(1.02);
 }
 
 .project-details-2 {

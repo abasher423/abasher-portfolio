@@ -66,11 +66,9 @@
     height: auto;
     width: 100%;
     transition: all 0.2s ease-in-out;
-  }
-}
-.featured-image:hover {
-  img {
-    transform: scale(1.02);
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 }
 .cards-container {

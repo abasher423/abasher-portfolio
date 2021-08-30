@@ -111,14 +111,14 @@ img {
   height: 100%;
 }
 
-.project-image img {
-  height: 100%;
-  width: auto;
-}
-
 .project-image:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+.project-image img {
+  height: 100%;
+  width: auto;
 }
 
 .project-details-2 ul {
