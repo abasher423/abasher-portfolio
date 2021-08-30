@@ -1,11 +1,17 @@
 import '../Styles/About.css';
 import { Icon  } from '@iconify/react';
+import 'aos/dist/aos.css';
+import Aos from 'aos';
+import { useEffect } from 'react';
 
 const About = () => {
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, [])
     return (
         <div className="about-container">
-            <h1 className="title" id="#about">About</h1>
-            <div className="about">
+            <h1 className="title" id="about">About</h1>
+            <div className="about" data-aos="fade-up">
                 <h1>Hello,</h1>
                 {/* <h2>
                     I'm Abdifatah, a Frontend Developer with high levels of energy and boundless entheusiasm 
