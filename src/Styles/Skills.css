@@ -1,0 +1,91 @@
+.skills-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #1b1b1b;
+}
+
+.skills-container h2 {
+  color: white;
+  text-align: center;
+  font-family: "Fira Code", monospace;
+  font-size: 30px;
+  padding-top: 2rem;
+}
+
+.skills {
+  height: 50vh;
+  width: 60%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  color: white;
+}
+
+.skills .card {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .card div {
+  font-size: 50px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.skills .card div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.skills .card h3 {
+  font-size: 1.25rem;
+  font-family: "Fira Code", monospace;
+}
+
+.skills .card p {
+  font-size: 0.8rem;
+  font-family: "Monda", sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 1224px) {
+  .skills {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    width: 100%;
+  }
+  .skills .card div {
+    font-size: 45px;
+  }
+  .skills .card h3 {
+    font-size: 0.8rem;
+  }
+  .skills .card p {
+    font-size: 0.6rem;
+  }
+}
+/*# sourceMappingURL=Skills.css.map */
