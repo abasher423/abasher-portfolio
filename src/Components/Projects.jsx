@@ -148,13 +148,13 @@ const Projects = () => {
                             <img src={mongo2} alt="MongoDB" />
                         </div>
                         <div className="links">
-                            <a href="https://github.com/abasher423/abasher-portfolio">
+                            <a href="https://github.com/abasher423/Air-Ticket-Sales-System">
                                 <FontAwesomeIcon icon={faGithub} size="1x"/> View on GitHub
                             </a>
                         </div>
                     </div>
                     <div className="project-image">
-                        <a href="https://github.com/abasher423/abasher-portfolio">
+                        <a href="https://github.com/abasher423/Air-Ticket-Sales-System">
                             <img src={projectImage3} alt="portfolio" />
                         </a>
                     </div>
