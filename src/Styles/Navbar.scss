@@ -26,6 +26,10 @@
       font-size: 22px;
       font-weight: 600;
       margin: 0.5rem;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        color: $primary-color;
+      }
     }
   }
 }
@@ -38,6 +42,12 @@
     color: $primary-color;
     font-family: $featured-font;
     font-weight: 700;
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+      color: $secondary-color;
+      transform: scale(1.1);
+    }
 
     span {
       color: $secondary-color;
@@ -58,7 +68,11 @@
 .icons {
   a {
     color: $primary-color;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
+    transition: all 300ms ease-in-out;
+    &:hover {
+      color: $secondary-color;
+    }
   }
 }
 

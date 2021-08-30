@@ -36,6 +36,12 @@
   font-size: 22px;
   font-weight: 600;
   margin: 0.5rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.header ul a:hover {
+  color: #1b1b1b;
 }
 
 .name {
@@ -47,6 +53,14 @@
   color: #1b1b1b;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.name a:hover {
+  color: #e63946;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .name a span {
@@ -66,7 +80,13 @@
 
 .icons a {
   color: #1b1b1b;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.icons a:hover {
+  color: #e63946;
 }
 
 @media (max-width: 1224px) {
