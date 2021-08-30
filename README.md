@@ -6,6 +6,9 @@ This portfolio website was created using HTML, CSS, JavaScript and Sass. This pr
 
 The portfolio website [is currently being hosted and can be accessed here.](https://abasher-portfolio-xg7by.ondigitalocean.app/)
 
+[![portfolio](https://user-images.githubusercontent.com/56160528/131359545-f7a0d5ac-382f-43ee-a525-5f01048a2c5c.png)
+](https://abasher-portfolio-xg7by.ondigitalocean.app/)
+
 ## Usage
 
 ### Installing Dependencies
