@@ -1,0 +1,183 @@
+.contact-container {
+  height: 100%;
+  background-color: white;
+}
+
+.contact-content {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.contact-content h2 {
+  margin-top: 4rem;
+  font-size: 28px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  margin-top: 2rem;
+  font-size: 48px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-icons a {
+  color: #1b1b1b;
+}
+
+.contact-icons a:hover {
+  color: #e63946;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.address {
+  display: -ms-grid;
+  display: grid;
+  width: 40%;
+  margin-top: 4rem;
+      grid-template-areas: "icon a1 a1" "icon a2 a2";
+}
+
+.address .location {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: icon;
+  font-size: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.address .address-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: a1;
+}
+
+.address .address-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: a2;
+}
+
+.address p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.mobile {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  width: 40%;
+  -ms-grid-columns: 15% 85%;
+      grid-template-columns: 15% 85%;
+}
+
+.mobile .mobile-icon {
+  font-size: 36px;
+}
+
+.mobile p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+form {
+  width: 80%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+input[type="submit"] {
+  background-color: white;
+  color: #e63946;
+  text-transform: uppercase;
+  border: 2px solid #e63946;
+  cursor: pointer;
+  border-radius: 25px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 5rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #e63946;
+  color: white;
+}
+
+@media (max-width: 1224px) {
+  .contact-content {
+    width: 60%;
+  }
+  .address {
+    width: 70%;
+  }
+  .mobile {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    width: 80%;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact-content {
+    width: 90%;
+  }
+  .contact-content h2 {
+    margin-top: 1rem;
+    font-size: 18px;
+  }
+  .mobile {
+    width: 100%;
+  }
+  .address {
+    width: 90%;
+    margin-top: 2rem;
+  }
+  form {
+    width: 100%;
+  }
+  .contact-icons {
+    width: 50%;
+    font-size: 48px;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */

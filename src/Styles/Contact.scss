@@ -1,0 +1,150 @@
+@import "./Variables.scss";
+
+.contact-container {
+  height: 100%;
+  background-color: white;
+}
+
+.contact-content {
+  width: 40%;
+  margin: 0 auto;
+
+  h2 {
+    margin-top: 4rem;
+    font-size: 28px;
+    font-family: $featured-font;
+  }
+}
+
+.contact-icons {
+  display: flex;
+  width: 30%;
+  margin-top: 2rem;
+  font-size: 48px;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  a {
+    color: #1b1b1b;
+  }
+  a:hover {
+    color: $secondary-color;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+  }
+}
+
+.address {
+  display: grid;
+  width: 40%;
+  margin-top: 4rem;
+  grid-template-areas:
+    "icon a1 a1"
+    "icon a2 a2";
+
+  .location {
+    grid-area: icon;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+  }
+  .address-1 {
+    grid-area: a1;
+  }
+  .address-2 {
+    grid-area: a2;
+  }
+  p {
+    font-family: $featured-font;
+    font-size: 16px;
+  }
+}
+
+.mobile {
+  margin-top: 2rem;
+  display: grid;
+  width: 40%;
+  grid-template-columns: 15% 85%;
+
+  .mobile-icon {
+    font-size: 36px;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    font-family: $featured-font;
+  }
+}
+
+form {
+  width: 80%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-family: $featured-font;
+  font-size: 15px;
+}
+
+input[type="submit"] {
+  background-color: white;
+  color: $secondary-color;
+  text-transform: uppercase;
+  border: 2px solid $secondary-color;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 5rem;
+}
+
+input[type="submit"]:hover {
+  background-color: $secondary-color;
+  color: white;
+}
+
+@media (max-width: $breakpoint-laptop) {
+  .contact-content {
+    width: 60%;
+  }
+  .address {
+    width: 70%;
+  }
+  .mobile {
+    width: 90%;
+  }
+}
+@media (max-width: $breakpoint-tablet) {
+  .contact-content {
+    width: 80%;
+  }
+}
+@media (max-width: $breakpoint-iphone-x) {
+  .contact-content {
+    width: 90%;
+
+    h2 {
+      margin-top: 1rem;
+      font-size: 18px;
+    }
+  }
+  .mobile {
+    width: 100%;
+  }
+  .address {
+    width: 90%;
+    margin-top: 2rem;
+  }
+  form {
+    width: 100%;
+  }
+  .contact-icons {
+    width: 50%;
+    font-size: 48px;
+  }
+}
