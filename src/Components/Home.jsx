@@ -17,14 +17,14 @@ const Home = () => {
                     <div className="home-image" data-aos="fade-right">
                         <div className="content-image"></div>
                     </div>
-                    <div className="home-text">
-                        <h1 data-aos="fade-left">Frontend Developer</h1>
-                        <h2 data-aos="fade-left" data-aos-delay="400">
+                    <div className="home-text" data-aos="fade-left">
+                        <h1>Frontend Developer</h1>
+                        <h2>
                             <span>&lt;</span>
                             Abdifatah Basher
                             <span>/&gt;</span>
                         </h2>
-                        <h3 data-aos="fade-left" data-aos-delay="800">
+                        <h3>
                             <Typical
                             steps={[
                                 "Frontend Developer 💻", 1000,
