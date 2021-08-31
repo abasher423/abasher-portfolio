@@ -211,7 +211,7 @@
   .cards-container {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 3rem 0;
   }
   .box {
