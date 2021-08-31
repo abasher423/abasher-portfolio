@@ -179,5 +179,9 @@ input[type="submit"]:hover {
     width: 50%;
     font-size: 48px;
   }
+  input[type="submit"] {
+    background-color: #e63946;
+    color: white;
+  }
 }
 /*# sourceMappingURL=Contact.css.map */

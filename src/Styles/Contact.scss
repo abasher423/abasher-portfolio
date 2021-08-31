@@ -146,4 +146,8 @@ input[type="submit"] {
     width: 50%;
     font-size: 48px;
   }
+  input[type="submit"] {
+    background-color: $secondary-color;
+    color: white;
+  }
 }
