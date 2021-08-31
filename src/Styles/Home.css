@@ -1,6 +1,6 @@
 .home {
   width: 80%;
-  margin: 3rem auto 0 auto;
+  margin: 0 auto 0 auto;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,7 +127,7 @@ img {
 
 @media (max-width: 375px) {
   .home {
-    height: 80vh;
+    height: 100vh;
   }
   .content-image {
     height: 264px;

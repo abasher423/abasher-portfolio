@@ -60,9 +60,10 @@
 
   .logos {
     height: 70px;
+    width: auto;
     img {
-      height: 100%;
-      width: 100%;
+      max-height: 100%;
+      max-width: 100%;
     }
   }
 
@@ -80,17 +81,16 @@
 }
 
 .project-image {
-  display: flex;
-  align-items: center;
   transition: all 0.2s ease-in-out;
   height: 100%;
+  width: 100%;
   &:hover {
     transform: scale(1.02);
   }
 
   img {
-    height: 100%;
-    width: auto;
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 
@@ -166,7 +166,7 @@
   .project-details {
     justify-content: space-around;
     .logos {
-      height: 4.5vw;
+      height: 45px;
     }
     h2 {
       font-size: 16px;
@@ -210,8 +210,10 @@
     }
   }
   .project-details {
+    padding: 0;
     .logos {
       height: 35px;
+      width: auto;
     }
     h2 {
       font-size: 1.2rem;
