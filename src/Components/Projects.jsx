@@ -16,7 +16,7 @@ import mongo from '../images/mongo.png';
 import mongo2 from '../images/mongo2.png';
 import vue from '../images/vue.png';
 import java from '../images/java.png';
-import projectImage1 from '../images/portfolio.png';
+import projectImage1 from '../images/portfolio.PNG';
 import projectImage2 from '../images/project-image-2.png';
 import projectImage3 from '../images/ats.png';
 import projectImage35 from '../images/project3.5.png';
