@@ -60,6 +60,7 @@
 .skills .card h3 {
   font-size: 1.25rem;
   font-family: "Fira Code", monospace;
+  text-align: center;
 }
 
 .skills .card p {
