@@ -177,6 +177,7 @@
   .project-details {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    margin: 1rem;
   }
   .project-details .logos {
     height: 45px;
@@ -200,6 +201,7 @@
     -webkit-columns: 3;
     -moz-columns: 3;
     margin-bottom: 2rem;
+    padding: 1rem;
   }
   .project-details-2 ul li {
     font-size: 13px;

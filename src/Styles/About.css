@@ -40,8 +40,8 @@
   margin: 0.5rem 3rem 0;
 }
 
-.interests ul li,
-.education ul li {
+.interests ul s li,
+.education ul s li {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -147,9 +147,24 @@
   }
   .interests-container {
     padding: 0;
+    margin: 2rem 0;
   }
   .about p {
     font-size: 1rem;
+  }
+  .interests h2,
+  .education h2 {
+    font-size: 24px;
+    font-family: "Fira Code", monospace;
+    text-align: left;
+  }
+  .interests ul,
+  .education ul {
+    margin: 0.5rem 1rem 0;
+  }
+  .interests ul s li,
+  .education ul s li {
+    font-family: "Open Sans", sans-serif;
   }
 }
 /*# sourceMappingURL=About.css.map */

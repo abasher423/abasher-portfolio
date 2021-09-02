@@ -55,7 +55,7 @@ const Featured = () => {
                             Bachelors     
                         </h2>
                         <p className="card-text">
-                            Bachelor of Science with Honours in Computer Science, Class I.  
+                            Bachelor of Science with Honours in Computer Science, Class 1.  
                         </p>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ const Featured = () => {
                             Adaptable
                         </h2>
                         <p className="card-text">
-                            Able to grasp new concepts quickly with an excellent capicity to retain new information.
+                            Able to grasp new concepts quickly with an excellent capacity to retain new information.
                         </p>
                     </div>
                 </div>

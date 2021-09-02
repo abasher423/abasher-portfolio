@@ -37,7 +37,7 @@ const Home = () => {
                             loop={Infinity}
                             />
                         </h3>
-                        <h4 data-aos="fade-left" data-aos-delay="1000">
+                        <h4>
                             <a href="#home">
                             Let's see my work <Icon icon="akar-icons:arrow-down"/>
                             </a>

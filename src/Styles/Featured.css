@@ -206,7 +206,7 @@
     width: 100%;
   }
   .featured-text {
-    padding-top: 1rem;
+    padding: 1rem;
   }
   .cards-container {
     -ms-grid-columns: 100%;

@@ -122,8 +122,8 @@
             flex-direction: column;
     right: 0;
     top: 7vh;
-    height: 92vh;
-    width: 25%;
+    height: 93vh;
+    width: 75%;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     -webkit-transition: -webkit-transform 0.25s ease-in;

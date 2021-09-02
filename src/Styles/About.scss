@@ -37,7 +37,7 @@
   }
   ul {
     margin: 0.5rem 3rem 0;
-    li {
+    s li {
       font-family: $body-font;
     }
   }
@@ -110,10 +110,25 @@
   }
   .interests-container {
     padding: 0;
+    margin: 2rem 0;
   }
   .about {
     p {
       font-size: 1rem;
+    }
+  }
+  .interests,
+  .education {
+    h2 {
+      font-size: 24px;
+      font-family: $title-font;
+      text-align: left;
+    }
+    ul {
+      margin: 0.5rem 1rem 0;
+      s li {
+        font-family: $body-font;
+      }
     }
   }
 }

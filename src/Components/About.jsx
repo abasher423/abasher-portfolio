@@ -12,11 +12,6 @@ const About = () => {
         <div className="about-container">
             <h1 className="title" id="about">About</h1>
             <div className="about" data-aos="fade-up">
-                <h1>Hello,</h1>
-                {/* <h2>
-                    I'm Abdifatah, a Frontend Developer with high levels of energy and boundless entheusiasm 
-                    looking to develop dynamic user interfaces.
-                </h2> */}
                 <p>I created this website to present my web development and design skills. 
                     Like many other people, I enjoy spending my free time increasing my knowledge 
                     of Web Development and building new and challenging projects.
