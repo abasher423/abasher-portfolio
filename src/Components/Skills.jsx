@@ -23,14 +23,14 @@ const Skills = () => {
                         <Icon icon="akar-icons:react-fill" />
                     </div>
                     <h3>Frameworks</h3>
-                    <p>React, Express</p>
+                    <p>React, Express, Bootstrap</p>
                 </div>
                 <div className="card" data-aos="zoom-in">
                     <div>
                         <Icon icon="mdi:material-ui" />
                     </div>
                     <h3>Libraries</h3>
-                    <p>Material-UI, light Redux</p>
+                    <p>Material-UI, Mongoose, Redux</p>
                 </div>
                 <div className="card" data-aos="zoom-in">
                     <div>
@@ -44,7 +44,7 @@ const Skills = () => {
                         <Icon icon="dashicons:database" />
                     </div>
                     <h3>Databases</h3>
-                    <p>SQLite, MongoDB</p>
+                    <p>SQLite, SQL, MongoDB</p>
                 </div>
                 <div className="card" data-aos="zoom-in">
                     <div>

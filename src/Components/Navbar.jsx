@@ -25,10 +25,10 @@ const Navbar = () => {
             </div>
             <div className="navbar">
                 <ul className={ menu ? "menu-open" : ""}>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" className="left">Home</a></li>
+                    <li><a href="#projects" className="left">Projects</a></li>
+                    <li><a href="#about" className="left">About</a></li>
+                    <li><a href="#contact" className="left">Contact</a></li>
                 </ul>
             </div>
             <div className="icons">
